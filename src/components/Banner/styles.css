@@ -1,0 +1,95 @@
+.banner {
+  color: #fff;
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+}
+
+.banner_fade {
+  width: inherit;
+  height: inherit;
+  background-image: linear-gradient(to top, #141414 30%, transparent 90%);
+}
+
+.banner_content {
+  margin-left: 60px;
+  padding-top: 250px;
+  height: 190px;
+}
+
+.banner_title {
+  font-size: 50px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  padding-bottom: 10px;
+}
+
+.banner_description {
+  width: 45rem;
+  line-height: 34px;
+  padding-top: 1px;
+  font-size: 24px;
+  max-width: 70%;
+  margin-bottom: 30px;
+}
+
+.banner_buttons {
+  display: flex;
+}
+
+.banner_button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  font-size: 1.6rem;
+  font-weight: 600;
+  border-radius: 4px;
+  margin-right: 1rem;
+  padding: 0.8rem 2.4rem 0.8rem 2rem;
+  transition: all 0.2s;
+  background-color: rgba(73, 73, 74);
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.banner_button svg {
+  margin-right: 10px;
+}
+
+.play {
+  color: #000;
+  background-color: #e6e6e6;
+}
+
+.play:hover,
+.banner_button:hover {
+  filter: opacity(0.8);
+}
+
+@media (max-width: 760px) {
+  .banner {
+    height: 90vh;
+  }
+
+  .banner_title {
+    font-size: 40px;
+  }
+
+  .banner_description {
+    font-size: 20px;
+    line-height: 26px;
+    margin-right: 30px;
+  }
+
+  .banner_button {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 460px) {
+  .banner_button {
+    font-size: 1rem;
+    padding: 0.6rem 2rem 0.6rem 1.6rem;
+  }
+}
